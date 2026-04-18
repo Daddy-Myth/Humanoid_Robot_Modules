@@ -34,12 +34,9 @@
 
 
 ## Structure
-humanoid/
-├── stt/
-├── face/
-├── object/
-└── main.py
-
+```
+humanoid/ │ ├── stt/ │ └── stt_module.py │ ├── face/ │ └── face_module.py │ ├── object/ │ └── object_module.py │ └── main.py
+```
 
 ## Rule
 
