@@ -44,7 +44,7 @@ humanoid/
 │   └── object_module.py
 ├── Notebooks/
 │   ├── STT_module.ipynb
-│   ├── face.ipynb
+│   ├── RTFD.ipynb
 │   └── object.ipynb
 ├── main.py
 └── README.md
