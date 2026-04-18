@@ -1,4 +1,4 @@
-Hi You found a secret message
+You found a secret message
 
 </details>
 <details>
