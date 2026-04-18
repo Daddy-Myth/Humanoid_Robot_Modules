@@ -9,12 +9,15 @@
 - Uses: Whisper
 
 
-### 2. Face Detection ⚠️
-- Status: In notebook → convert to `.py`
-- Tasks:
-  - Extract logic
-  - Remove notebook code
-  - Create `detect_faces(frame)`
+### 2. Face Detection & Recognition ✅
+- Status: Done (.py)
+- Input: image/frame
+- Output:
+  - bounding boxes
+  - identity (if recognized)
+- Uses:
+  - MTCNN (face detection)
+  - FaceNet (embeddings)
 
 
 ### 3. Object Detection ❌
@@ -27,15 +30,14 @@
 
 ## Next Steps
 
-- [ ] Convert face detection → `.py`
 - [ ] Build object detection (ipynb → `.py`)
-- [ ] Clean STT module
-- [ ] Integrate all modules
-
+- [ ] Clean STT module (remove debug / optimize)
+- [ ] Integrate all modules into `main.py`
+- [ ] Optimize performance (FPS, latency)
 
 ## Structure
 ```
-humanoid/
+Humanoid/
 ├── STT/
 │   └── stt_module.py
 ├── Face_Recognnition/
