@@ -35,7 +35,19 @@
 
 ## Structure
 ```
-humanoid/ │ ├── stt/ │ └── stt_module.py │ ├── face/ │ └── face_module.py │ ├── object/ │ └── object_module.py │ └── main.py
+humanoid/
+├── STT/
+│   └── stt_module.py
+├── Face_Recognnition/
+│   └── face_module.py
+└── Object_Detection/
+│   └── object_module.py
+├── Notebooks/
+│   ├── STT_module.ipynb
+│   ├── face.ipynb
+│   └── object.ipynb
+├── main.py
+└── README.md
 ```
 
 ## Rule
