@@ -49,15 +49,17 @@
 Humanoid/
 ├── STT/
 │   └── stt_module.py
-├── Face_Recognnition/
-│   └── face_module.py
-└── Object_Detection/
-│   └── object_module.py
+├── Face_Recognition/
+│   ├── face_module.py
+│   └── Saved/              ← known face images (.jpg / .png)
+├── Object_Detection/
+│   ├── object_module.py
+│   └── yolov8n.pt
 ├── Notebooks/
 │   ├── STT_module.ipynb
 │   ├── RTFD.ipynb
 │   └── object.ipynb
-├── main.py
+├── camera_module.py
 └── README.md
 ```
 
