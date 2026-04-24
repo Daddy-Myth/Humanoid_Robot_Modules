@@ -20,19 +20,22 @@
   - FaceNet (embeddings)
 
 
-### 3. Object Detection ❌
-- Status: Not started
-- Plan:
-  - Prototype in notebook (YOLO / pretrained model)
-  - Convert to `.py`
-  - Create `detect_objects(frame)`
+### 3. Object Detection ✅
+- Status: Done (.py)
+- Input: image/frame
+- Output: annotated frame with bounding boxes + labels
+- Uses: YOLOv8n (pretrained COCO, 80 classes)
+- Key classes: laptop, keyboard, person, chair, 
+               bottle, phone, book, tv, mouse, 
+               dining table, bed, couch...
 
 
 ## Next Steps
 
-- [ ] Build object detection (ipynb → `.py`)
-- [ ] Clean STT module (remove debug / optimize)
-- [ ] Integrate all modules into `main.py`
+- [x] Build object detection (ipynb → .py)
+- [x] Clean STT module (remove debug / optimize)
+- [ ] Write main.py (combine all 3 modules)
+- [ ] Test all 3 together on live camera
 - [ ] Optimize performance (FPS, latency)
 
 ## Structure
