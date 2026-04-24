@@ -8,7 +8,6 @@
 - Output: text
 - Uses: Whisper
 
-
 ### 2. Face Detection & Recognition ✅
 - Status: Done (.py)
 - Input: image/frame
@@ -19,25 +18,32 @@
   - MTCNN (face detection)
   - FaceNet (embeddings)
 
-
 ### 3. Object Detection ✅
 - Status: Done (.py)
 - Input: image/frame
 - Output: annotated frame with bounding boxes + labels
 - Uses: YOLOv8n (pretrained COCO, 80 classes)
-- Key classes: laptop, keyboard, person, chair, 
-               bottle, phone, book, tv, mouse, 
+- Key classes: laptop, keyboard, person, chair,
+               bottle, phone, book, tv, mouse,
                dining table, bed, couch...
 
+### 4. Camera Module ✅
+- Status: Done (.py)
+- Input: live camera feed
+- Output: single window with face + object annotations overlaid
+- Uses: face_module + object_module
+- Notes: STT excluded — will be integrated separately
 
 ## Next Steps
-
 - [x] Build object detection (ipynb → .py)
 - [x] Clean STT module (remove debug / optimize)
-- [ ] Write main.py (combine all 3 modules)
-- [ ] Test all 3 together on live camera
+- [x] Write camera_module.py (face + object on shared feed)
+- [ ] Integrate STT into main pipeline
+- [ ] Write main.py (combine all modules)
+- [ ] Test all together on live camera
 - [ ] Optimize performance (FPS, latency)
 
+## Structure
 ## Structure
 ```
 Humanoid/
